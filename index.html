@@ -9,7 +9,6 @@
     <a-camera rotation="0 0 0" position="0 100 250" camera="active:true" wasd-controls="acceleration:800">
     </a-camera>
     <a-sound src="assets/ice-john-whiles.mp3" autoplay="true" position="0 2 5" loop="true" volume="3"></a-sound>
-
     <a-sphere src="assets/fac11.jpg" position="13.660 191.842 -4.249" radius="5" color="paleorange">
       <a-animation dur="9000" ease="none" to="0 360 0" repeat="indefinite"></a-animation>
     </a-sphere>
@@ -34,9 +33,11 @@
     <a-sphere src="assets/facn3.jpg" position="-1.766 144.886 -42.356" radius="5" color="orange">
       <a-animation dur="8000" ease="none" to="0 360 0" repeat="indefinite"></a-animation>
     </a-sphere>
-
-    <a-sky src="assets/night-sky.jpg"></a-sky>
-    <a-gltf-model src="assets/tree/scene.gltf" position="0 -50 0" scale="0.4 0.4 0.4" gltf-model="assets/tree/scene.gltf"></a-gltf-model>
+    <a-entity>
+      <a-animation attribute="rotation" dur="20000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      <a-sky src="assets/night-sky.jpg"></a-sky>
+      <a-gltf-model src="assets/tree/scene.gltf" position="0 -50 0" scale="0.4 0.4 0.4" gltf-model="assets/tree/scene.gltf"></a-gltf-model>
+    </a-entity>
   </a-scene>
 </body>
 
