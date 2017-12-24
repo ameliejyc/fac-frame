@@ -6,6 +6,10 @@
 
 <body>
   <a-scene>
+    <a-camera rotation="4.69825392007277 2.0626480624709296 0" wsad-controls="" look-controls="" position="-50 1.6 66.818" camera="active:false"
+      wasd-controls="acceleration:85" data-aframe-inspector-original-camera="">
+    </a-camera>
+    <a-sound src="src: url(click.mp3)" autoplay="true" position="0 2 5" loop="true" volume="1"></a-sound>
     <a-sphere src="https://cdn.glitch.com/1c8ec970-8f52-4cc2-a62d-1cc47c51d014%2Ffac11.JPG?1511092031900" position="0 2.25 5"
       rotation="0 180 10" radius="1.85" color="lemonchiffon"></a-sphere>
     <a-sphere src="https://cdn.glitch.com/1c8ec970-8f52-4cc2-a62d-1cc47c51d014%2Ffac9.JPG?1511129322178" position="0 3.25 0"
@@ -16,9 +20,13 @@
       rotation="0 10 10" radius="1.85" color="palevioletred"></a-sphere>
     <a-sphere src="https://cdn.glitch.com/1c8ec970-8f52-4cc2-a62d-1cc47c51d014%2FDSC_6572.jpg?1511131289664" position="0 1.25 7"
       rotation="0 10 10" radius="1.85" color="indigo"></a-sphere>
-    <a-plane src="https://cdn.glitch.com/1c8ec970-8f52-4cc2-a62d-1cc47c51d014%2Ffac11.JPG?1511092031900" position="0 0 -4" rotation="-90 0 0"
-      width="20" height="50" color="#7BC8A4"></a-plane>
-    <a-sky src="https://cdn.glitch.com/1c8ec970-8f52-4cc2-a62d-1cc47c51d014%2Ffac11.JPG?1511092031900"></a-sky>
+    <a-sky src="assets/night-sky.jpg"></a-sky>
+
+    <a-assets>
+      <a-asset-item id="tree-model" src="assets/tree/scene.gltf"></a-asset-item>
+      <!-- (https://sketchfab.com/models/bacdf9be9880497cbb2d6d12e30349c0) by v124entkl(https://sketchfab.com/v124entkl) is licensed under CC Attribution(http://creativecommons.org/licenses/by/4.0/) -->
+    </a-assets>
+    <a-gltf-model src="#tree-model" position="0 -50 0" scale="0.2 0.2 0.2" gltf-model="assets/tree/scene.gltf"></a-gltf-model>
   </a-scene>
 </body>
 
