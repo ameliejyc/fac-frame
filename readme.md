@@ -1,8 +1,10 @@
 # fac-frame
 
-### a christmas miracle. in virtual reality (using a-frame)
+### a christmas miracle. in virtual reality (using @aframevr)
 
-use arrows or wsad to explore on desktop
+## fac-frame.surge.sh
+
+use arrows or wsad + your cursor to explore on desktop
 
 or if you have google cardboard press the headset icon in the bottom right corner
 
