@@ -9,7 +9,10 @@
   <a-scene>
     <a-camera rotation="0 0 0" position="0 100 250" camera="active:true" wasd-controls="acceleration:800">
     </a-camera>
-    <a-sound src="assets/ice-john-whiles.mp3" autoplay="true" position="0 2 5" loop="true" volume="3"></a-sound>
+    <a-assets>
+      <audio id="ice" src="assets/ice-john-whiles.mp3" preload="auto" autoplay="true" position="0 2 5" loop="true" volume="2"></audio>
+    </a-assets>
+    <a-entity sound="src: #ice"></a-entity>
     <a-sphere src="assets/fac11.jpg" position="13.660 191.842 -4.249" radius="5" color="lemonchiffon">
       <a-animation dur="9000" ease="none" to="0 360 0" repeat="indefinite"></a-animation>
     </a-sphere>
