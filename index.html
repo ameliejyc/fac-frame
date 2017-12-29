@@ -1,18 +1,32 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FAC Frame</title>
   <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-  <meta charset="UTF-8">
 </head>
 
 <body>
+  <!--A-Frame Documentation: https://aframe.io/docs/-->
   <a-scene>
     <a-camera rotation="0 0 0" position="0 100 250" camera="active:true" wasd-controls="acceleration:800">
     </a-camera>
-    <a-assets>
+
+    <!--audio-->
+    <a-assets> -->
       <audio id="ice" src="assets/ice-john-whiles.mp3" preload="auto" autoplay="true" position="0 2 5" loop="true" volume="2"></audio>
     </a-assets>
     <a-entity sound="src: #ice"></a-entity>
+
+    <!--space and tree model-->
+    <a-entity>
+      <a-animation attribute="rotation" dur="20000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
+      <a-sky src="assets/night-sky.jpg"></a-sky>
+      <a-gltf-model src="assets/tree/scene.gltf" position="0 -50 0" scale="0.4 0.4 0.4" gltf-model="assets/tree/scene.gltf"></a-gltf-model>
+    </a-entity>
+
+    <!--fac baubles-->
     <a-sphere src="assets/fac11.jpg" position="13.660 191.842 -4.249" radius="5" color="lemonchiffon">
       <a-animation dur="9000" ease="none" to="0 360 0" repeat="indefinite"></a-animation>
     </a-sphere>
@@ -37,11 +51,7 @@
     <a-sphere src="assets/facn3.jpg" position="-1.766 144.886 -42.356" radius="5" color="orange">
       <a-animation dur="8000" ease="none" to="0 360 0" repeat="indefinite"></a-animation>
     </a-sphere>
-    <a-entity>
-      <a-animation attribute="rotation" dur="20000" fill="forwards" to="0 360 0" repeat="indefinite"></a-animation>
-      <a-sky src="assets/night-sky.jpg"></a-sky>
-      <a-gltf-model src="assets/tree/scene.gltf" position="0 -50 0" scale="0.4 0.4 0.4" gltf-model="assets/tree/scene.gltf"></a-gltf-model>
-    </a-entity>
+
   </a-scene>
 </body>
 
